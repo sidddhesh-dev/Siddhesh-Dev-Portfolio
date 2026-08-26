@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Siddhesh Thorat — Python Backend & AI Developer</title>
+  <meta name="description" content="Full Stack Python Developer specializing in Django, REST APIs, React, and production RAG/LLM systems. Based in Pune, India."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+
+  <nav>
+    <span class="nav-name">Siddhesh Thorat</span>
+    <div class="nav-links">
+      <a href="#projects">Projects</a>
+      <a href="#stack">Stack</a>
+      <a href="#contact">Contact</a>
+      <a href="https://ap.wps.com/cms/docs/d/cbCaeeZ6vB4AAmVB" target="_blank" class="nav-resume">Resume ↗</a>
+    </div>
+  </nav>
+
+
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-tag">Available for opportunities · Pune, India</div>
+      <h1>
+        Python Backend &<br>
+        <span class="accent">Applied AI Developer</span>
+      </h1>
+      <p class="hero-sub">
+        I build production-grade REST APIs and AI-powered systems using Django, Celery, Redis, Docker, and RAG pipelines with real LLM integration. Not tutorials — deployed, debugged, and working in production.
+      </p>
+      <div class="hero-stack-strip">
+        <span>Python</span>
+        <span class="dot">·</span>
+        <span>Django / DRF</span>
+        <span class="dot">·</span>
+        <span>React</span>
+        <span class="dot">·</span>
+        <span>Celery + Redis</span>
+        <span class="dot">·</span>
+        <span>Docker</span>
+        <span class="dot">·</span>
+        <span>RAG / LLM</span>
+      </div>
+      <div class="hero-cta">
+        <a href="#projects" class="btn-primary">See my work</a>
+        <a href="https://github.com/sidddhesh-dev" target="_blank" class="btn-ghost">GitHub ↗</a>
+        <a href="https://www.linkedin.com/in/siddhesh-thorat-494123373" target="_blank" class="btn-ghost">LinkedIn ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROOF BAR -->
+  <section class="proof-bar">
+    <div class="proof-grid">
+      <div class="proof-item">
+        <span class="proof-num">10+</span>
+        <span class="proof-label">Production APIs shipped</span>
+      </div>
+      <div class="proof-item">
+        <span class="proof-num">18</span>
+        <span class="proof-label">Production bugs resolved</span>
+      </div>
+      <div class="proof-item">
+        <span class="proof-num">4</span>
+        <span class="proof-label">Cloud services deployed</span>
+      </div>
+      <div class="proof-item">
+        <span class="proof-num">3</span>
+        <span class="proof-label">Live projects in production</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="section-inner">
+      <h2 class="section-title">Projects</h2>
+      <p class="section-sub">Every technology listed here was actually used. If you want to know why, I can explain it.</p>
+
+      <!-- NEUROFLOW AI — FEATURED -->
+      <div class="project-featured">
+        <div class="project-featured-header">
+          <div>
+            <div class="project-badge">Featured Project</div>
+            <h3 class="project-title">NeuroFlow AI</h3>
+            <p class="project-desc">AI-powered developer workspace with a complete, production-deployed RAG pipeline. Users upload documents and get accurate answers powered by multiple LLMs — no hallucination-only fallback, real semantic retrieval first.</p>
+          </div>
+          <div class="project-links">
+            <a href="https://neuroflow-ai-frontend.onrender.com" target="_blank" class="link-pill">Live ↗</a>
+            <a href="https://github.com/sidddhesh-dev/NeuroFlow-AI" target="_blank" class="link-pill">GitHub ↗</a>
+          </div>
+        </div>
+
+        <div class="pipeline">
+          <div class="pipeline-label">RAG Pipeline</div>
+          <div class="pipeline-steps">
+            <div class="step">Document Upload</div>
+            <div class="arrow">→</div>
+            <div class="step">Text Extraction<br><small>PDF/DOCX/XLSX/PPTX</small></div>
+            <div class="arrow">→</div>
+            <div class="step">Chunking</div>
+            <div class="arrow">→</div>
+            <div class="step">Embeddings<br><small>SentenceTransformers</small></div>
+            <div class="arrow">→</div>
+            <div class="step">ChromaDB<br><small>Vector Storage</small></div>
+            <div class="arrow">→</div>
+            <div class="step">Semantic Retrieval</div>
+            <div class="arrow">→</div>
+            <div class="step accent-step">LLM Answer<br><small>Gemini / OpenAI / Groq</small></div>
+          </div>
+        </div>
+
+        <div class="project-highlights">
+          <div class="highlight">
+            <div class="highlight-title">Multi-provider LLM abstraction</div>
+            <div class="highlight-body">Custom abstraction layer across Gemini, OpenAI, and Groq with automatic fallback routing — not just calling one API.</div>
+          </div>
+          <div class="highlight">
+            <div class="highlight-title">Async document processing</div>
+            <div class="highlight-body">Celery workers + Redis queue offloaded to a dedicated Railway microservice so uploads don't block the main API.</div>
+          </div>
+          <div class="highlight">
+            <div class="highlight-title">4-service cloud architecture</div>
+            <div class="highlight-body">Frontend on Render, backend on Railway, Postgres + Storage on Supabase, Redis on Upstash — independently deployed and connected.</div>
+          </div>
+          <div class="highlight">
+            <div class="highlight-title">18 production issues resolved</div>
+            <div class="highlight-body">CORS misconfigs, Redis TLS failures, Celery worker isolation, PostgreSQL auth failures, Supabase Storage migration — all in live production.</div>
+          </div>
+        </div>
+
+        <div class="tech-tags">
+          <span>Django</span><span>DRF</span><span>React</span><span>Celery</span>
+          <span>Redis</span><span>ChromaDB</span><span>Docker</span><span>Supabase</span>
+          <span>Gemini</span><span>OpenAI</span><span>Groq</span><span>Railway</span>
+        </div>
+      </div>
+
+  
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-card-header">
+            <h3>BuyNGo</h3>
+            <div class="card-links">
+              <a href="https://siddhesh2003.pythonanywhere.com" target="_blank">Live ↗</a>
+              <a href="https://github.com/sidddhesh-dev/BuyNGo" target="_blank">GitHub ↗</a>
+            </div>
+          </div>
+          <p>Full-stack e-commerce platform with auth, session cart, paginated catalog, checkout, and order tracking. 5+ deployment cycles with iterative improvements.</p>
+          <div class="tech-tags small">
+            <span>Django</span><span>PostgreSQL</span><span>REST API</span><span>JavaScript</span><span>PythonAnywhere</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-header">
+            <h3>Job Application Tracker</h3>
+            <div class="card-links">
+              <a href="https://job-tracking-application.onrender.com" target="_blank">Live ↗</a>
+              <a href="https://github.com/sidddhesh-dev/job_tracking_application" target="_blank">GitHub ↗</a>
+            </div>
+          </div>
+          <p>Django dashboard managing 500+ job records with interview scheduling, resume uploads, status pipelines, and role-based access control.</p>
+          <div class="tech-tags small">
+            <span>Django</span><span>Tailwind CSS</span><span>JavaScript</span><span>Render</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section section-alt" id="stack">
+    <div class="section-inner">
+      <h2 class="section-title">Technical Stack</h2>
+      <p class="section-sub">Grouped by how I actually use them — not by how many I can list.</p>
+
+      <div class="stack-grid">
+        <div class="stack-group">
+          <div class="stack-group-label">Core Language</div>
+          <div class="stack-items">
+            <span class="stack-item primary">Python</span>
+            <span class="stack-item">JavaScript</span>
+            <span class="stack-item">SQL</span>
+            <span class="stack-item">Bash</span>
+          </div>
+        </div>
+        <div class="stack-group">
+          <div class="stack-group-label">Backend</div>
+          <div class="stack-items">
+            <span class="stack-item primary">Django</span>
+            <span class="stack-item primary">Django REST Framework</span>
+            <span class="stack-item">FastAPI</span>
+            <span class="stack-item">JWT Auth</span>
+            <span class="stack-item primary">Celery</span>
+            <span class="stack-item primary">Redis</span>
+          </div>
+        </div>
+        <div class="stack-group">
+          <div class="stack-group-label">AI / RAG / LLM</div>
+          <div class="stack-items">
+            <span class="stack-item primary">RAG Pipelines</span>
+            <span class="stack-item primary">ChromaDB</span>
+            <span class="stack-item primary">Sentence Transformers</span>
+            <span class="stack-item">Prompt Engineering</span>
+            <span class="stack-item">OpenAI API</span>
+            <span class="stack-item">Google Gemini</span>
+            <span class="stack-item">Groq</span>
+          </div>
+        </div>
+        <div class="stack-group">
+          <div class="stack-group-label">Frontend</div>
+          <div class="stack-items">
+            <span class="stack-item primary">React</span>
+            <span class="stack-item">TanStack Query</span>
+            <span class="stack-item">React Router</span>
+            <span class="stack-item">Tailwind CSS</span>
+            <span class="stack-item">Vite</span>
+          </div>
+        </div>
+        <div class="stack-group">
+          <div class="stack-group-label">Databases</div>
+          <div class="stack-items">
+            <span class="stack-item primary">PostgreSQL</span>
+            <span class="stack-item">MySQL</span>
+            <span class="stack-item">SQLite</span>
+            <span class="stack-item">Supabase</span>
+            <span class="stack-item">ChromaDB</span>
+          </div>
+        </div>
+        <div class="stack-group">
+          <div class="stack-group-label">Cloud & DevOps</div>
+          <div class="stack-items">
+            <span class="stack-item primary">Docker</span>
+            <span class="stack-item">GitHub Actions</span>
+            <span class="stack-item">Render</span>
+            <span class="stack-item">Railway</span>
+            <span class="stack-item">Supabase</span>
+            <span class="stack-item">Upstash</span>
+            <span class="stack-item">Linux / WSL2</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section" id="experience">
+    <div class="section-inner">
+      <h2 class="section-title">Experience</h2>
+      <div class="exp-card">
+        <div class="exp-header">
+          <div>
+            <div class="exp-role">Python Developer Intern</div>
+            <div class="exp-company">Testyantra Software Solutions Pvt. Ltd. — Pune</div>
+          </div>
+          <div class="exp-date">Jan 2025 – Oct 2025</div>
+        </div>
+        <ul class="exp-list">
+          <li>Architected <strong>10+ production RESTful APIs</strong> with DRF and modular MVC design, reducing response time by <strong>25%</strong></li>
+          <li>Engineered <strong>5+ backend modules</strong> with reusable serializers and models, cutting code redundancy by <strong>30%</strong></li>
+          <li>Optimized complex SQL queries via Django ORM across MySQL and PostgreSQL across <strong>3+ production modules</strong></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section section-alt" id="contact">
+    <div class="section-inner contact-inner">
+      <h2 class="section-title">Get in touch</h2>
+      <p class="section-sub">Open to full-time roles in Python backend, full-stack, or applied AI engineering. Based in Pune — open to remote.</p>
+      <div class="contact-links">
+        <a href="mailto:siddhesh.s.thorat14@gmail.com" class="contact-link">
+          <span class="contact-icon">✉</span>
+          siddhesh.s.thorat14@gmail.com
+        </a>
+        <a href="https://www.linkedin.com/in/siddhesh-thorat-494123373" target="_blank" class="contact-link">
+          <span class="contact-icon">in</span>
+          LinkedIn Profile
+        </a>
+        <a href="https://github.com/sidddhesh-dev" target="_blank" class="contact-link">
+          <span class="contact-icon">{}</span>
+          GitHub Profile
+        </a>
+        <a href="https://ap.wps.com/cms/docs/d/cbCaeeZ6vB4AAmVB" target="_blank" class="contact-link accent-link">
+          <span class="contact-icon">↓</span>
+          Download Resume
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span>Siddhesh Thorat · Pune, India · 2026</span>
+    <span>Built with HTML, CSS — no frameworks needed</span>
+  </footer>
+
+</body>
+</html>
